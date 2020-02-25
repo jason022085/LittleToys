@@ -105,5 +105,5 @@ leveneTest(FB_total~ groups2,data=df)
 # ANOVA : reject the homogeneiality assumption, inequal-variance across groups(welch's)
 oneway.test(FB_total ~ groups2, data=df, var.equal=FALSE)
 
-# 
+#
 describeBy(df,group =  df$groups2)
